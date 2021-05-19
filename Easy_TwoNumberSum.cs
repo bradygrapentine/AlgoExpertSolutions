@@ -1,7 +1,6 @@
 // My Solution:
 
 using System;
-using System.Linq;
 public class Program {
 	public static int[] TwoNumberSum(int[] array, int targetSum) {
 		for (var i = 0; i < array.Length; i++) 
