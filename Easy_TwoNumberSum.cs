@@ -18,7 +18,7 @@ public class Program {
 	}
 }
 
-// Sampple Solutions
+// Sample Solutions
 
 // using System.Collections.Generic;
 // public class Program {
