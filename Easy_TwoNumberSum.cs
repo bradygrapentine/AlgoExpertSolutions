@@ -1,4 +1,4 @@
-// Original Answers
+// Original Answer
 
 using System;
 using System.Linq;
