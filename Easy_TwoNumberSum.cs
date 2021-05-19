@@ -1,4 +1,3 @@
-// Original Answer
 
 using System;
 using System.Linq;
@@ -39,6 +38,7 @@ public class Program {
 // }
 
 
+// using System;
 // public class Program {
 // 	public static int[] TwoNumberSum(int[] array, int targetSum) {
 // 		Array.Sort(array);
