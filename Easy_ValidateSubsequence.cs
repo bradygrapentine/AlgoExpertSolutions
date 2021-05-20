@@ -31,7 +31,7 @@ public class Program {
 
 // This code doesn't do what was asked because order matters in this problem,
 // but, if we ignore whether the elements of the array and subsequence have 
-// the same order, then this code works.
+// the same order, it works.
 
   public static bool IsValidSubsequence2(List<int> array, List<int> sequence) {
 	  int seqIdx = 0;
