@@ -16,10 +16,10 @@ public class Program {
 			{
 				wins[home] = 1;
 				if (wins[home] > topScore)
-			  {
-				  topScore = wins[home];
-				  winner = home;
-			  }
+			        {
+					topScore = wins[home];
+					winner = home;
+			        }
 			}
 			else if (results[i] == 0 && !(wins.ContainsKey(away)))
 			{
@@ -27,17 +27,17 @@ public class Program {
 				if (wins[away] > topScore) 
 				{
 					topScore = wins[away];
-				  winner = away;
-			  }
+				        winner = away;
+			        }
 			}
 			else if (results[i] == 1 && (wins.ContainsKey(home))) 
 			{
 				wins[home] += 1;
 				if (wins[home] > topScore)
-			  {
+			        {
 					topScore = wins[home];
-				  winner = home;
-			  }
+				        winner = home;
+			        }
 			}
 			else if (results[i] == 0 && (wins.ContainsKey(away)))
 			{
@@ -45,8 +45,8 @@ public class Program {
 				if (wins[away] > topScore) 
 				{
 					topScore = wins[away];
-				  winner = away;
-			  }
+				        winner = away;
+			        }
 			}
 		}
 		return winner;
