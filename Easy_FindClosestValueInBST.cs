@@ -3,29 +3,27 @@ using System.Collections.Generic;
 
 public class Program {
 	public static int FindClosestValueInBst(BST tree, int target) {
-    var result = tree.value;
-    var queue = new Queue<BST>();
-		
-    if (tree != null) 
-    {
-      queue.Enqueue(tree);
-    }
-    while (queue.Count > 0) 
-    {
-      var n = queue.Dequeue();
-      if (n != null) 
-      {
-        if (Math.Abs(n.value - target) <  Math.Abs(result - target)) 
+		var result = tree.value;
+                var queue = new Queue<BST>();
+		if (tree != null) 
+		{
+			queue.Enqueue(tree);
+		}
+                while (queue.Count > 0) 
+		{
+			var n = queue.Dequeue();
+			if (n != null) 
+                        {
+				if (Math.Abs(n.value - target) <  Math.Abs(result - target)) 
 				{
 					result = n.value ;
 				}
-				
 				queue.Enqueue(n.left);
-        queue.Enqueue(n.right);
-      }
-    }
-    return result;
-  }
+                                queue.Enqueue(n.right);
+			}
+		}
+		return result;
+	}
 
 	
 	public class BST {
