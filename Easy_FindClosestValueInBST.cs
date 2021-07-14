@@ -2,13 +2,13 @@ using System;
 using System.Collections.Generic;
 
 public class Program {
+	
+	//---------------------------------------------------------------//
+	
 	public static int FindClosestValueInBst(BST tree, int target) {
 		var result = tree.value;
                 var queue = new Queue<BST>();
-		if (tree != null) 
-		{
-			queue.Enqueue(tree);
-		}
+	        queue.Enqueue(tree);
                 while (queue.Count > 0) 
 		{
 			var n = queue.Dequeue();
@@ -35,6 +35,7 @@ public class Program {
 		return result;
 	}
 
+	//---------------------------------------------------------------//
 	
 	public class BST {
 		public int value;
