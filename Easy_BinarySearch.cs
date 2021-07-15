@@ -10,7 +10,7 @@ public class Program {
 
 	while(searching) {
 		
-    // ---------------------------------------------- // 
+        // ---------------------------------------------- // 
 		
 		if (array[midpoint] == target) {
 			searching = false;
