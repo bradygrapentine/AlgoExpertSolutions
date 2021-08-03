@@ -9,7 +9,7 @@ public class Program {
 		var sum = 0;
 		if (fastest) {
 			var blueSortedMax = blueShirtSpeeds.OrderBy(num => num).ToList();
-		  var redSortedDescendingMax = redShirtSpeeds.OrderByDescending(num => num).ToList();
+		    var redSortedDescendingMax = redShirtSpeeds.OrderByDescending(num => num).ToList();
 			while (count < redShirtSpeeds.Length) {
 				sum += Math.Max(blueSortedMax[count], redSortedDescendingMax[count]);
 				count++;
@@ -18,7 +18,7 @@ public class Program {
 		}
 		else {
 			var blueSortedMin = blueShirtSpeeds.OrderBy(num => num).ToList();
-		  var redSortedMin = redShirtSpeeds.OrderBy(num => num).ToList();
+		    var redSortedMin = redShirtSpeeds.OrderBy(num => num).ToList();
 			while (count < redShirtSpeeds.Length) {
 				sum += Math.Max(blueSortedMin[count], redSortedMin[count]);
 				count++;
