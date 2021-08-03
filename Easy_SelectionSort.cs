@@ -9,18 +9,18 @@ public class Program {
 		var least = 0;
 		while (result.Count() < array.Length) {
 			for (var i = 0; i < arrayAsList.Count(); i++) {
-			  if (arrayAsList[i] <= arrayAsList[least]) {
-				  least = i;
-			  }
-				// Console.WriteLine("Current: " + arrayAsList[i] + ", Index: " + i + ", Least: " + arrayAsList[least] + ", Least Index: " + least);
-		  }
+				if (arrayAsList[i] <= arrayAsList[least]) {
+					least = i;
+				}
+			    // Console.WriteLine("Current: " + arrayAsList[i] + ", Index: " + i + ", Least: " + arrayAsList[least] + ", Least Index: " + least);
+			}
 			// Console.WriteLine("Least: " + arrayAsList[least]);
 			result.Add(arrayAsList[least]);
 			arrayAsList.RemoveAt(least);
 			// Console.WriteLine("Count: " + arrayAsList.Count());
 			least = 0;
 		}
-	  return result.ToArray();
+		return result.ToArray();
 	}
 }
 
