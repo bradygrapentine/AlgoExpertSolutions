@@ -27,7 +27,7 @@ function replaceNext(phoneNumber, index) {
 			result.push(...replaceNext(tempNums[i].split(''), nextIndex))
 		}
 	} else {
-    result.push(...tempNums)
+		result.push(...tempNums)
 	}
 	return result
 }
